@@ -7,14 +7,17 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( // Linea de codigo Para la barra de navegacion
-        title: const Text("Segunda Pantalla"), // Linea de codigo Para la barra de navegacion
+      appBar: AppBar(
+        // Linea de codigo Para la barra de navegacion
+        title: const Text(
+            "Segunda Pantalla"), // Linea de codigo Para la barra de navegacion
       ),
-      body:Center(
-        child: ElevatedButton( 
-        child: const Text("Reresar"),
-        onPressed: () => Navigator.pop(context),//pop borra a la segunda pantalla de memoria y regresa a la primera
-      ),
+      body: Center(
+        child: ElevatedButton(
+          child: const Text("Regresar"),
+          onPressed: () => Navigator.pop(
+              context), //pop borra a la segunda pantalla de memoria y regresa a la primera
+        ),
       ),
     );
   }

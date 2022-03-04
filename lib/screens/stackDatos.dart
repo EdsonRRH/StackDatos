@@ -26,7 +26,7 @@ class StackDatos extends StatelessWidget {
                 height: 900.0,
                 //color: Colors.red,
                 child: Image.asset(
-                  "assets/img/heriberto.jpg", //agregar imagen desde caretas
+                  "assets/img/edson6.jpeg", //agregar imagen desde caretas
                   width: 500.0, //tamano de la imagen
                   height: 500.0,
                 ),

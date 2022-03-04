@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
             Text("Texto 2", style: TextStyle(fontSize: 25.0)),
             SizedBox(width: 20.0),
             Image.asset(
-              "assets/img/heriberto.jpg", //agregar imagen desde caretas
+              "assets/img/edson6.jpeg", //agregar imagen desde caretas
               width: 100.0, //tamano de la imagen
             ),
             SizedBox(
