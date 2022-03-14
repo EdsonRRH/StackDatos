@@ -8,6 +8,8 @@ import 'package:flutter_app/screens/stackScreen.dart';
 import 'screens/dataScreen.dart';
 import 'screens/secondScreen.dart';
 import 'screens/stackDatos.dart';
+import 'screens/formScreen.dart';
+import 'screens/tarjetaScreen.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -20,6 +22,8 @@ void main() {
       '/datos': (context) => const DatosPage(),
       '/stack': (context) => const TestStack(),
       '/stackDatos': (context) => const StackDatos(),
+      '/formScreen': (context) => const FormScreen(),
+      '/tarjetaScreen': (context) => const TarjetaScreen(),
     },
     //home: HomePage(),
   ));
@@ -117,8 +121,9 @@ class HomePage extends StatelessWidget {
           centerTitle: true, //appBar parte superior
           title: Text("pagina inicial"),
           elevation: 20.0, //elevacion del menu
-          shadowColor: Colors.green, //sombra del background
-          backgroundColor: Colors.red, //color de bacground
+          shadowColor: Color.fromARGB(255, 19, 30, 194), //sombra del background
+          backgroundColor:
+              Color.fromARGB(255, 54, 216, 244), //color de bacground
 
           //Color de icono
           iconTheme: IconThemeData(color: Colors.blue),
@@ -198,7 +203,33 @@ class HomePage extends StatelessWidget {
 
                   //Navigator.push(context, route);//abre la ventana nueva
                   Navigator.pushNamed(context, '/stackDatos');
-                })
+                }),
+            SizedBox(height: 5.0),
+            ElevatedButton(
+                child: Text("FormScreen"),
+                onPressed: () {
+                  /*
+                final route = MaterialPageRoute(
+                  builder: (context) => const DatosPage(),
+                );
+                */
+                  //Navigator.push(context, route);//abre la ventana nueva
+                  Navigator.pushNamed(context, "/formScreen");
+
+                  Navigator.pushNamed(context, '/stackDatos');
+                }),
+            SizedBox(height: 5.0),
+            ElevatedButton(
+                child: Text("TarjetaScreen"),
+                onPressed: () {
+                  /*
+                final route = MaterialPageRoute(
+                  builder: (context) => const DatosPage(),
+                );
+                */
+                  //Navigator.push(context, route);//abre la ventana nueva
+                  Navigator.pushNamed(context, "/tarjetaScreen");
+                }),
           ],
         )),
       ),

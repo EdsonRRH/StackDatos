@@ -16,7 +16,7 @@ class DatosPage extends StatelessWidget {
             children: <Widget>[
               SizedBox(height: 20.0),
               Image.asset(
-                'assets/img/heriberto.jpg',
+                'assets/img/edson6.jpg',
                 width: 170.0,
               ),
               Text(
